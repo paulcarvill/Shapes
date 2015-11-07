@@ -1,0 +1,5 @@
+# Assets are generated via a grunt task, and
+# including them in the repo would be redundant.
+*
+!.gitignore
+

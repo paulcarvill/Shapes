@@ -1,0 +1,7 @@
+node_modules
+.sass-cache
+bower
+*.sublime-project
+*.sublime-workspace
+craft/config/license.key
+craft/config/db.php

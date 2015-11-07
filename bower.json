@@ -1,0 +1,21 @@
+{
+  "name": "craft_boilerplate",
+  "version": "0.0.3",
+  "authors": [
+    "Ray Brown <ray@bitmanic.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/bitmanic/craft_boilerplate",
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "craft_boilerplate",
+  "title": "Craft CMS Boilerplate",
+  "description": "A boilerplate for Craft CMS built by Bitmanic.",
+  "version": "0.0.3",
+  "author": {
+    "name": "Ray Brown",
+    "url": "http://bitmanic.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bitmanic/craft_boilerplate.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-coffee": "~0.11.1",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-htmlmin": "~0.3.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-newer": "~0.7.0",
+    "load-grunt-tasks": "~0.6.0",
+    "grunt-contrib-copy": "~0.6.0",
+    "grunt-contrib-uglify": "~0.6.0"
+  }
+}
