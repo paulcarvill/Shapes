@@ -117,6 +117,13 @@ module.exports = (grunt) ->
           src: '**/*.js'
           dest: '<%= path.public %>/assets/js'
         ]
+      fonts:
+        files: [
+          expand: true
+          cwd: '<%= path.dev %>/assets/fonts'
+          src: '**/*'
+          dest: '<%= path.public %>/assets/fonts'
+        ]
 
     # HTMLmin - Minify HTML files
     # ------------------------------------------------------------------------ #
@@ -182,6 +189,7 @@ module.exports = (grunt) ->
           '<%= path.public %>/assets/js/throttle.js',
           '<%= path.public %>/assets/js/glitch.js',
           '<%= path.public %>/assets/js/animatedTitle.js',
+          '<%= path.public %>/assets/js/CodeWordTransitioner.js',
           '<%= path.public %>/assets/js/scripts.js'
 
         ]
@@ -265,6 +273,7 @@ module.exports = (grunt) ->
     'copy:png'
     'copy:svg'
     'copy:js'
+    'copy:fonts'
 
     # Generate scripts
     'coffee'

@@ -1,0 +1,45 @@
+#logo {
+	width:133px;
+	height:153px
+}
+
+#logo svg {
+	width:133px;
+	height:153px;
+	transition:all 500ms ease-in;
+	position:relative;
+	z-index:10
+}
+
+#logo #alt-logo {
+	position: relative;
+	left: -21px;
+	width: 177px;
+	display: none;
+}
+
+.scroll #logo #alt-logo {
+	display: block;
+}
+
+.scroll #logo-svg {
+	display: none;
+}
+
+#logo{margin-left:88px}
+
+.about #logo {position:fixed;top:24px}
+
+@media (max-width: 600px){
+	#logo svg{height:65px;width:64px}
+	.about #logo{position:static;float:left;width:56px;height:auto;margin:12px 0 0 28px}
+	.about #logo svg{width:56px;height:65px}
+	.home #logo {
+		position: relative;
+		top: 108px;
+		margin-left: 23px;
+		height: auto;
+		width: 150px;
+		float: left;
+	}
+}

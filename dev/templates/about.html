@@ -1,6 +1,17 @@
 {% set title = "About" %} {% set bodyClasses = 'about' %}<!doctype html><html class="no-js {{ bodyClasses ?: '' }}" lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>▼ &#9608; ⬤ ◀ ⬤ ▼ &#9608; ▼ ⬤ ⬤ ◀ &#9608; ▼ &#9608;</title><meta name="viewport" content="width=device-width,initial-scale=1">{# Global styles #} {{ craft.config.webFontCode|raw }}<link rel="stylesheet" type="text/css" href="{{ craft.config.tmpl.css }}/assets/css/styles.css">{# Page-specific styles (if they exist) #} {% block page_styles %}{% endblock %} {# Enable livereload if we're developing locally #} {% if craft.config.env == "local" %} {% spaceless %}<script type="text/javascript">//<![CDATA[
           document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
-        //]]></script>{% endspaceless %} {% endif %}</head><body class="{{ bodyClasses ?: '' }}">{# Page-specific javascript (if it exists) #} {% if block('page_top_scripts') %}<script type="text/javascript">{% block page_top_scripts %}{% endblock %}</script>{% endif %}<div id="viewport"><div id="scrollwrapper"><div id="innerscrollwrapper"><div id="widthwrapper">{% include "_partials/header.html" %}<div id="logo"><a href="/"><svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" viewbox="0 0 133 153" fill="#2d2f30"><path id="square" d="M124.884,152.997
+        //]]></script>{% endspaceless %} {% endif %}</head>
+
+<body class="{{ bodyClasses ?: '' }}">
+{# Page-specific javascript (if it exists) #} {% if block('page_top_scripts') %}
+<script type="text/javascript">{% block page_top_scripts %}{% endblock %}</script>
+{% endif %}
+    <div id="viewport">
+    	<div id="scrollwrapper">
+    		<div id="innerscrollwrapper">
+    			<div id="widthwrapper">
+        			{% include "_partials/header.html" %}
+					<div id="logo"><a href="/"><svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" viewbox="0 0 133 153" fill="#2d2f30"><path id="square" d="M124.884,152.997
 					  	L-0.001,152.997
 					  	L-0.001,0.003
 					  	L133.001,0.003

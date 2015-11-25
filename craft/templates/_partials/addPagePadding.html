@@ -1,0 +1,10 @@
+<script type="text/javascript">var e = window, a = 'inner';
+	if (!('innerWidth' in window )) {
+		a = 'client';
+		e = document.documentElement || document.body;
+	}
+	var shapes_size = { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+
+	if(shapes_size.width > shapes_size.height) {
+		document.body.style.paddingTop = window.innerHeight/2-80+'px';
+	}</script>

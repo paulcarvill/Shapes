@@ -1,0 +1,21 @@
+.gettinghere .who p{font-size:36px;line-height:48px}
+.gettinghere .meta{position:relative;bottom:auto;top:-74px;float:left;margin-top:-108px;width:65%}
+.gettinghere .meta-inner{float:left;width:100%;box-sizing:content-box;padding:28px 0 28px 0}
+.gettinghere .meta>div:nth-of-type(2) .who p{color:#909699}
+.gettinghere footer{clear:both}
+.gettinghere .date h3{text-transform:uppercase;color:#909699;font-size:14px;margin-top:8px}
+.gettinghere .meta-inner{margin-bottom:0}
+.gettinghere .who p{margin-bottom:0}
+#map{height:590px}
+
+@media (max-width: 600px){
+	.gettinghere .meta{float:none;margin-top:-37px;width:auto}
+	.gettinghere .meta-inner{padding:0}
+	.gettinghere .who p{font-size:18px;line-height:24px}
+	.gettinghere article:nth-of-type(1){margin-top:112px}
+	.gettinghere #logo{margin-left:23px;width:65px;height:64px}
+	.gettinghere article:nth-of-type(1),#map{height:216px}
+	.gettinghere .meta{top:0;padding-right:0}
+	.gettinghere .meta-inner,.date,.who,.meta{float:none;width:auto}
+	.gettinghere .date h3{margin-top:12px}
+}

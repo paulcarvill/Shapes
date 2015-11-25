@@ -10,7 +10,7 @@
           MAX_CHAR_IN_DELAY: 70,
           MIN_CHAR_OUT_DELAY: 80,
           MAX_CHAR_OUT_DELAY: 140,
-          CHARS: '•••••••••••••‣◆‣◆‣◆‣◆‣◆‣◆∙∘‣◆∙∘‣◆∙∘‣◆∙∘••......'.split('').map(function(char) {
+          CHARS: 'WHATSONGETTINGHEREABOUT'.split('').map(function(char) {
             return char;
           }),
           CHAR_TEMPLATE: "<span data-codetext-char=\"{{ char }}\" data-codetext-char-state=\"{{ state }}\">{{ char }}</span>"
