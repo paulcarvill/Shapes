@@ -28,7 +28,7 @@
 
 #logo{margin-left:88px}
 
-.about #logo {position:fixed;top:24px}
+.about #logo {position:fixed;top:0; z-index: 20;}
 
 @media (max-width: 600px){
 	#logo svg{height:65px;width:64px}

@@ -5,7 +5,10 @@ footer a:last-of-type svg{margin-right:0}
 footer svg:hover{fill:#f5f5f5;cursor:pointer}
 footer a,footer a:visited{text-transform:none;color:#909699}
 footer a:hover{color:#f5f5f5}
-#email p{float:left;padding-top:4px;color:#909699}
+
+#email p,
+#email input[type=text] {float:left; width: 85%; padding-top:4px;color:#909699; background: #2d2f30; border: none; font-size: 18px;}
+
 .about footer,.gettinghere footer{position:absolute;bottom:0;left:0;z-index:1;pointer-events:none}
 #email{width:600px;margin:0 auto;border-bottom:3px solid #f5f5f5;padding-bottom:16px;margin-bottom:68px}
 #by{position:absolute;bottom:16px;color:#909699}
@@ -23,8 +26,12 @@ footer a:hover{color:#f5f5f5}
 
 @media (max-width: 600px){
 	footer{background:#2d2f30;color:#f5f5f5;text-align:center;padding:2em;margin-top:100px;height:300px}
-	#email{width:80%;margin:0 auto;border-bottom:4px solid #f5f5f5;padding-bottom:16px;margin-bottom:68px}
+	#email{width:100%;margin:0 auto;border-bottom:4px solid #f5f5f5;padding-bottom:16px;margin-bottom:68px}
 	.about footer,.gettinghere footer{right:0}
 	#by{right:16px}
 	#scrollwrapper{z-index:2}
+}
+
+input[type=submit] {
+	display: none;
 }

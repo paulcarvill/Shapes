@@ -5,3 +5,4 @@ bower
 *.sublime-workspace
 craft/config/license.key
 craft/config/db.php
+/.DS_Store

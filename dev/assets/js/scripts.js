@@ -24,12 +24,3 @@ namespace("App", function(exports) {
     $("html").removeClass("no-js");
   })();
 });
-
-//# sourceMappingURL=scripts.js.map
-$('nav li a>span').each(function(){
-  CodeWordTransitioner.to($(this).data('name'), $(this));
-});
-
-$('nav li a>span').on('mouseover', function(){
-  CodeWordTransitioner.to($(this).data('name'), $(this));
-});
