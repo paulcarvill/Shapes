@@ -32,6 +32,10 @@ nav a svg {
 	margin-right: 88px;
 }
 
+.menuicons svg:hover{
+	fill: #909699;
+}
+
 @media (min-width: 601px){
 	nav li{float:left;margin-right:20px}
 	li a:hover{cursor:pointer}
@@ -40,6 +44,9 @@ nav a svg {
 }
 
 @media (max-width: 600px){
+	.menuicons {
+		display: none;
+	}
 	nav {
 		position:static;
 		font-size:14px;

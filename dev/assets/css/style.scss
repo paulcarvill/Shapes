@@ -27,7 +27,7 @@ article.event{position:relative}
 	.event:nth-of-type(odd){position:relative;height:600px;margin-bottom:0}
 	.event:nth-of-type(1){height:auto;margin-bottom:72px}
 	.event .pic,.event:nth-of-type(odd) .pic{width:64%;height:500px;margin-left:36%}
-	.event:nth-of-type(1) .pic,.pic{width:77%;height:848px;overflow:hidden}
+	.event:nth-of-type(1) .pic,.pic{width:77%;height:848px;overflow:hidden;position:relative;}
 	.event:nth-of-type(1) .pic{margin-left:0}
 	.event:nth-of-type(odd) .meta{margin-top:-702px;margin-bottom:0px;bottom:auto}
 	.event:nth-of-type(1) .meta{margin-top:-202px}
