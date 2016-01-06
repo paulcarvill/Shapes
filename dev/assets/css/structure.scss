@@ -27,7 +27,6 @@
 .about {
 	#container {
 	clear:both;
-	padding-top: 14px;
 	}
 }
 
@@ -47,9 +46,6 @@ body.home #innerscrollwrapper {
 }
 
 @media (max-width: 600px){
-	.gettinghere #container {
-		margin-top: -32px
-	}
 
 	#viewport{
 		clear: both;
@@ -57,7 +53,7 @@ body.home #innerscrollwrapper {
 }
 
 @media (min-width: 601px){
-	#innerscrollwrapper {
+	.about #innerscrollwrapper {
 		padding-top: 330px
 	}
 	
@@ -72,8 +68,7 @@ body.home #innerscrollwrapper {
 	
 	#about{padding-top:20px}
 	
-	.home #container,
-	.gettinghere #container {
+	.home #container {
 		margin-top: -88px
 	}
 }

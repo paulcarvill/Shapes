@@ -28,18 +28,33 @@
 
 #logo{margin-left:88px}
 
-.about #logo {position:fixed;top:0; z-index: 20;}
+.about #logo,
+.gettinghere #logo {
+	position:fixed;
+	top:-8px;
+	z-index: 20;
+}
 
 @media (max-width: 600px){
 	#logo svg{height:65px;width:64px}
-	.about #logo{position:static;float:left;width:56px;height:auto;margin:12px 0 0 28px}
+	
+	.about #logo,
+	.gettinghere #logo {
+		position:static;
+		float:left;
+		width:56px;
+		height:auto;
+		margin:12px 0 0 28px
+	}
+
 	.about #logo svg{width:56px;height:65px}
+
 	.home #logo {
 		position: relative;
 		top: 108px;
 		margin-left: 23px;
 		height: auto;
-		width: 150px;
+		width: auto;
 		float: left;
 	}
 }

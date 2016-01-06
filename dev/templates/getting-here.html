@@ -5,40 +5,12 @@
 {% block page_script_tags %}
 <script>
 var map;
-var styles = [
-	{
-		"featureType":"landscape",
-		"stylers":[{"saturation":-100},{"lightness":-10}, {"visibility":"on"}]
-	},
-	{
-		"featureType":"poi",
-		"stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]
-	},
-	{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},
-	{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},
-	{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},
-	{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},
-	{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},
-	{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},
-	{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#cccccc"},{"lightness":-10},{"saturation":-97}]},
-	{"featureType":"poi.sports_complex","stylers":[{"saturation":-100},{"lightness":-5}]},
-	{"featureType":"poi.park","stylers":[{"saturation":-100},{"lightness":-5}]},
-	{
-		"featureType":"water",
-		"stylers":[{"saturation":-100},{"invert_lightness":true}]
-	},
-	{
-		"featureType":"all",
-		"stylers":[{"saturation":-100}]
-	}
-];
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat:51.544523, lng: -0.023579},
     zoom: 16,
     scrollwheel: false,
-    // styles: styles,
     streetViewControl: false,
     mapTypeControl: false
   });
@@ -48,18 +20,6 @@ function initMap() {
 {% endblock %}
 
 {% block page_content %}
-<script type="text/javascript">
-	var e = window, a = 'inner';
-	if (!('innerWidth' in window )) {
-		a = 'client';
-		e = document.documentElement || document.body;
-	}
-	var shapes_size = { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
-
-	if(shapes_size.width > shapes_size.height) {
-		document.getElementById('innerscrollwrapper').style.paddingTop = window.innerHeight/2-80+'px';
-	}
-</script>
 
 {% block fixedlogo %}
 {% endblock %}

@@ -1,48 +1,11 @@
 {% set title = "Getting here" %} {% set bodyClasses = 'gettinghere' %} {% extends "_layouts/default.html" %} {% block page_script_tags %}<script>var map;
-var styles = [
-	{
-		"featureType":"landscape",
-		"stylers":[{"saturation":-100},{"lightness":-10}, {"visibility":"on"}]
-	},
-	{
-		"featureType":"poi",
-		"stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]
-	},
-	{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},
-	{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},
-	{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},
-	{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},
-	{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},
-	{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},
-	{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#cccccc"},{"lightness":-10},{"saturation":-97}]},
-	{"featureType":"poi.sports_complex","stylers":[{"saturation":-100},{"lightness":-5}]},
-	{"featureType":"poi.park","stylers":[{"saturation":-100},{"lightness":-5}]},
-	{
-		"featureType":"water",
-		"stylers":[{"saturation":-100},{"invert_lightness":true}]
-	},
-	{
-		"featureType":"all",
-		"stylers":[{"saturation":-100}]
-	}
-];
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat:51.544523, lng: -0.023579},
     zoom: 16,
     scrollwheel: false,
-    // styles: styles,
     streetViewControl: false,
     mapTypeControl: false
   });
-}</script><script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer="defer"></script>{% endblock %} {% block page_content %}<script type="text/javascript">var e = window, a = 'inner';
-	if (!('innerWidth' in window )) {
-		a = 'client';
-		e = document.documentElement || document.body;
-	}
-	var shapes_size = { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
-
-	if(shapes_size.width > shapes_size.height) {
-		document.getElementById('innerscrollwrapper').style.paddingTop = window.innerHeight/2-80+'px';
-	}</script>{% block fixedlogo %} {% endblock %} {% block insidehead %} {% endblock %}<div id="container"><div id="map"></div><div class="meta"><div class="meta-top"><p>Directions</p></div><div class="meta-inner"><div class="date"><h3>Address</h3></div><div class="who"><p>Shapes, 117 Wallis Road, Hackney Wick, London E9 5LN</p></div></div><div class="meta-inner"><div class="date"><h3>Overground</h3><p>1 minute walk</p></div><div class="who"><p>Hackney Wick</p></div></div><div class="meta-inner"><div class="date"><h3>Underground</h3><p>12 minutes walk</p></div><div class="who"><p>Stratford (Central/ Jubilee/ DLR/ Overground)</p></div></div><div class="meta-inner"><div class="date"><h3>Buses</h3></div><div class="who"><p>From Shoreditch, Hackney Central & Waterloo: 26 to Hackney Wick</p></div></div><div class="meta-inner"><div class="date"><h3>Cars</h3></div><div class="who"><p>Shapes run a licensed minicab service from our doorstep</p></div></div></div><span style="clear:both; display:block"></span></div>{% endblock %}
+}</script><script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer="defer"></script>{% endblock %} {% block page_content %} {% block fixedlogo %} {% endblock %} {% block insidehead %} {% endblock %}<div id="container"><div id="map"></div><div class="meta"><div class="meta-top"><p>Directions</p></div><div class="meta-inner"><div class="date"><h3>Address</h3></div><div class="who"><p>Shapes, 117 Wallis Road, Hackney Wick, London E9 5LN</p></div></div><div class="meta-inner"><div class="date"><h3>Overground</h3><p>1 minute walk</p></div><div class="who"><p>Hackney Wick</p></div></div><div class="meta-inner"><div class="date"><h3>Underground</h3><p>12 minutes walk</p></div><div class="who"><p>Stratford (Central/ Jubilee/ DLR/ Overground)</p></div></div><div class="meta-inner"><div class="date"><h3>Buses</h3></div><div class="who"><p>From Shoreditch, Hackney Central & Waterloo: 26 to Hackney Wick</p></div></div><div class="meta-inner"><div class="date"><h3>Cars</h3></div><div class="who"><p>Shapes run a licensed minicab service from our doorstep</p></div></div></div><span style="clear:both; display:block"></span></div>{% endblock %}

@@ -13,9 +13,12 @@
 	.gettinghere .meta-inner{padding:0}
 	.gettinghere .who p{font-size:18px;line-height:24px}
 	.gettinghere article:nth-of-type(1){margin-top:112px}
-	.gettinghere #logo{margin-left:23px;width:65px;height:64px}
+	.gettinghere #logo{margin-left:23px;width:56px;height:auto}
 	.gettinghere article:nth-of-type(1),#map{height:216px}
 	.gettinghere .meta{top:0;padding-right:0}
 	.gettinghere .meta-inner,.date,.who,.meta{float:none;width:auto}
 	.gettinghere .date h3{margin-top:12px}
+	.gettinghere #container {
+		clear: both;
+	}
 }
