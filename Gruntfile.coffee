@@ -188,6 +188,7 @@ module.exports = (grunt) ->
           '<%= path.public %>/assets/js/StaticShader.js',
           '<%= path.public %>/assets/js/throttle.js',
           '<%= path.public %>/assets/js/glitch.js',
+          '<%= path.public %>/assets/js/animatedTitle.js',
           '<%= path.public %>/assets/js/scripts.js'
 
         ]
