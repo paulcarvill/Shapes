@@ -20,7 +20,7 @@ nav li{padding:0;display:block;position:relative}
 
 nav li:last-of-type{margin:0}
 
-nav li span{font-size:14px;line-height:14px;}
+nav li span{font-size:14px;line-height:14px;text-transform: uppercase;}
 
 nav a {
 	text-transform:none;
@@ -29,6 +29,7 @@ nav a {
 nav a svg {
 	position: relative;
 	top: -4px;
+	fill: #2d2f30;
 }
 
 .menuicons {
@@ -62,19 +63,27 @@ nav a svg {
 		padding: 0;
 	}
 	.home nav {
-		width: 70%;
 		float: right;
 		margin: 12px 12px 0 0;
 	}
-	nav li{margin:0 16px 8px 0; float: left;}
+	nav li{margin:0 12px 8px 0; float: left;}
 	h1{font-size:40px;line-height:40px}
 	h2{font-size:24px;line-height:24px;margin-bottom:12px;margin-top:12px}
 	
 	.about nav,
 	.gettinghere nav {
 		float:right;
-		width:70%;
-		margin:12px 12px 0 0;
+		margin:12px 4px 0 0;
 	}
 
+}
+
+@media (max-width: 353px){ 
+	nav li span {
+		font-size: 12px;
+	}
+
+	.home nav {
+		margin-right: 4px;
+	}
 }

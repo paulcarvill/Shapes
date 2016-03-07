@@ -5,5 +5,9 @@
 
 @media (max-width: 600px){
 	.fixedsticky{margin-left:23px}
-	nav li span{font-size:16px}
+	nav li span{font-size:14px; text-transform: uppercase;}
+}
+
+@media (max-width: 353px){
+	nav li span{font-size:12px;}
 }

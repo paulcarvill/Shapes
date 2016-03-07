@@ -54,9 +54,9 @@ article.event{position:relative}
 	article:nth-of-type(1){position:relative;top:72px; margin-bottom:122px}
 	.about article:nth-of-type(1){top:0}
 	article:nth-of-type(1n+2).pic img{height:100%;width:auto}
-	article:nth-of-type(1n+2) .pic{margin-left:120px;height:266px;margin-right:0}
+	article:nth-of-type(1n+2) .pic{height:266px;margin-right:0}
 	article:nth-of-type(1n+2) h2{margin-top:0}
-	article:nth-of-type(1n+2) .meta{margin-top:-60px;position:relative}
+	article:nth-of-type(1n+2) .meta{margin-top:-40px;position:relative}
 	article:nth-of-type(1n+2) .who{padding-top:12px}
 	article:nth-of-type(1n+2) .meta-top{margin-right:44px}
 	article:nth-of-type(1) .meta-top{background:none;margin-top:-37px;position:relative;z-index:10}
@@ -70,12 +70,12 @@ article.event{position:relative}
 	.altevent .pic.nomobile{display:none}
 	.altevent .meta-top{margin-top:-60px}
 
-	.meta-top{margin-left:28px;margin-right:28px;border-bottom:4px solid #2d2f30;padding:6px 0}
+	.meta-top{margin-left:0px;margin-right:28px;border-bottom:4px solid #2d2f30;padding:6px 0 6px 28px}
 	.meta-top p{font-size:18px;display:inline}
 	.meta-inner{margin:0 28px}
 
 	.who{margin-bottom:23px}
-	.who p{font-size:21px;line-height:26px}
+	.who p{font-size:16px;line-height:26px}
 
 	.time,.price{width:45%;margin-right:3%;float:left;margin-bottom:20px;text-transform:uppercase}
 	.time p,.price p{margin-bottom:0}
@@ -92,7 +92,6 @@ article.event{position:relative}
 	article:nth-of-type(1n+2) .pic img {
 		height:100%;
 		width: auto;
-		margin-left: -50%
 	}
 
 	.play{display:none}
